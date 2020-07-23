@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     background-color: rgb(15, 15, 15);
     border-bottom: 2px solid #ffc107;
@@ -12,4 +16,23 @@
 
 .my-2 {
     border-color: rgba(255, 255, 255, .1);
+}
+
+.icons {
+    font-size: xxx-large;
+}
+
+.icons a {
+    color: grey;
+    margin: 1rem;
+}
+
+.icons a:hover {
+    text-decoration: none;
+    color: #ffc107;
+    transition: .9s;
+    transform: rotate(360deg);
+}
+.fas.fa-angle-double-up {
+    font-size: 2rem;
 }
