@@ -46,7 +46,7 @@ html {
     transition: .5s;
 } */
 
-.up-button:hover {
+.up-button:hover > .up-button-arrow {
     animation-name: up-btn-anim;
     animation-duration: .8s;
     animation-iteration-count: infinite;
