@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Gallery</title>
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">  
 
 </head>
@@ -40,14 +44,16 @@
   
   <div class="gallery" id="gallery">
     <div class="row m-2">
-      <img class="col-md-4 p-2" src="https://images.unsplash.com/photo-1595079559940-4474acea712a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
-      <img class="col-md-4 p-2" src="https://images.unsplash.com/photo-1577039252506-ca1b9b56235c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-      <img class="col-md-4 p-2" src="https://images.unsplash.com/photo-1543331929-eae8ddce56cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="col-md-4 p-2" data-aos="fade-down-right" data-aos-duration="1000"
+        src="https://images.unsplash.com/photo-1595079559940-4474acea712a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        alt="Mucha">
+      <img class="col-md-4 p-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" src="https://images.unsplash.com/photo-1577039252506-ca1b9b56235c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="col-md-4 p-2" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="400" src="https://images.unsplash.com/photo-1543331929-eae8ddce56cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
     </div>
     <div class="row m-2">
-      <img class="col-md-4 p-2" src="https://images.unsplash.com/photo-1538679519509-e48f1212f4b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-      <img class="col-md-4 p-2" src="https://images.unsplash.com/photo-1590818022705-312688042024?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-      <img class="col-md-4 p-2" src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="col-md-4 p-2" data-aos="fade-up-right" src="https://images.unsplash.com/photo-1538679519509-e48f1212f4b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="col-md-4 p-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" src="https://images.unsplash.com/photo-1590818022705-312688042024?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="col-md-4 p-2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400" src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
     </div>
   </div>
 
@@ -59,13 +65,15 @@
         <a class="fab fa-instagram" href="#"></a>
         <a class="fab fa-linkedin" href="#"></a>
       </div>
-      <div class="col-1 ">
-        <a name="up" class="btn btn-warning" href="#" role="button">
-          <i class="fas fa-angle-double-up"></i>
+        <a class="btn btn-warning up-button" href="#" data-toggle="tooltip" title="Początek strony">
+          <i class="fas fa-angle-double-up up-button" ></i>
         </a>
-      </div>
     </div>
   </div>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a1967f7887.js" crossorigin="anonymous"></script>

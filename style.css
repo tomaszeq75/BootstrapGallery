@@ -25,14 +25,29 @@ html {
 .icons a {
     color: grey;
     margin: 1rem;
+    transition: .9s;
 }
 
 .icons a:hover {
     text-decoration: none;
     color: #ffc107;
-    transition: .9s;
     transform: rotate(360deg);
 }
 .fas.fa-angle-double-up {
     font-size: 2rem;
+}
+
+@keyframes up-btn-anim {
+    30%     {transform: translateY(-5px);}
+    100%    {transform: translateY(0px);}
+}
+
+/* #up-button {
+    transition: .5s;
+} */
+
+.up-button:hover {
+    animation-name: up-btn-anim;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
 }
